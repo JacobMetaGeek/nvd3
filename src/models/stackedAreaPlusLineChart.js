@@ -268,9 +268,9 @@ nv.models.stackedAreaPlusLineChart = function() {
       lines
         .width(availableWidth)
         .height(availableHeight) 
-        /*.color(data.map(function(d,i) {
+        .color(data.map(function(d,i) {
             return d.color || color(d, i);
-        }).filter(function(d,i) { return !data[i].disabled }));*/
+        }).filter(function(d,i) { return !data[i].disabled }));
 
       g.select('.nv-stackedWrap').remove();
       g.append('g').attr('class', 'nv-stackedWrap');
@@ -283,7 +283,7 @@ nv.models.stackedAreaPlusLineChart = function() {
       }
       else {
           var linesWrap = g.select('.nv-stackedWrap')
-              .datum(data);//data.filter(function(d) { return !d.disabled }))
+              .datum(data.filter(function(d) { return !d.disabled }))
 
           linesWrap.transition().call(lines);
       }
