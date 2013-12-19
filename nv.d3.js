@@ -13912,7 +13912,7 @@ nv.models.stackedAreaChart = function() {
           }
         ];
 
-        controlWidth = (cData.length/3) * 260;
+        controlWidth = (cData.length/3) * 250;
 
         controlsData = controlsData.filter(function(d) {
           return cData.indexOf(d.metaKey) !== -1;
@@ -14555,7 +14555,7 @@ nv.models.stackedAreaPlusLineChart = function() {
           }
         ];
 
-        controlWidth = (cData.length/3) * 260;
+        controlWidth = (cData.length/3) * 250;
 
 
         controlsData = controlsData.filter(function(d) {
