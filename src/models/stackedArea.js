@@ -87,7 +87,6 @@ nv.models.stackedArea = function() {
                 })
               (dataFiltered);
 
-
       //------------------------------------------------------------
       // Setup containers and skeleton of chart
 

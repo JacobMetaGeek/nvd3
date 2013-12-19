@@ -35,6 +35,7 @@ JS_FILES = \
 	src/models/sparklinePlus.js \
 	src/models/stackedArea.js \
 	src/models/stackedAreaChart.js \
+	src/models/stackedAreaPlusLineChart.js \
 	src/outro.js
 CSS_FILES = \
 	src/nv.d3.css
